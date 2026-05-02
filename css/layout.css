@@ -1,0 +1,151 @@
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1.8rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+    margin: 1.5rem 0 2rem;
+}
+
+.section-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 2.5rem 0 1.5rem 0;
+    border-left: 5px solid var(--green-accent);
+    padding-left: 1rem;
+}
+
+/* ===== ШАПКА ===== */
+.site-header {
+    padding: 1.8rem 0 1.2rem 0;
+    border-bottom: 2px solid var(--black);
+    margin-bottom: 2.5rem;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--black);
+}
+
+.logo span {
+    color: var(--green-accent);
+}
+
+.logo-sub {
+    font-size: 0.85rem;
+    color: #3a3a3a;
+    margin-top: 0.25rem;
+}
+
+.hero {
+    margin-bottom: 3rem;
+    padding: 1rem 0;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.hero .green-accent {
+    color: var(--green-accent);
+    border-bottom: 2px solid var(--green-accent);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    color: #2c2c2c;
+    max-width: 600px;
+}
+
+.contact-panel {
+    background: var(--gray-soft);
+    border-left: 6px solid var(--green-accent);
+    padding: 2rem;
+    margin: 2rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.info-block {
+    flex: 1;
+    min-width: 200px;
+}
+
+.info-block h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.address-detail {
+    font-style: normal;
+    line-height: 1.6;
+}
+
+.map-image {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 1rem;
+    border: 1px solid var(--black);
+}
+
+.map-caption {
+    font-size: 0.75rem;
+    color: #666;
+    margin-top: 0.3rem;
+}
+
+.masters-list li {
+    margin-bottom: 0.9rem;
+    padding-bottom: 0.6rem;
+    border-bottom: 1px dashed #ddd;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.master-name {
+    font-weight: 600;
+}
+
+.work-hours {
+    font-size: 0.85rem;
+    color: #4a4a4a;
+    margin-top: 1rem;
+}
+
+.site-footer {
+    background: var(--black);
+    color: #dddddd;
+    padding: 2rem 0;
+    margin-top: 3rem;
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+}
+
+.footer-links a {
+    color: #ccc;
+    text-decoration: none;
+    margin-left: 1.5rem;
+    transition: color 0.2s;
+}
+
+.footer-links a:hover {
+    color: var(--green-accent);
+}

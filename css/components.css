@@ -1,0 +1,253 @@
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--black);
+    font-weight: 500;
+    padding-bottom: 0.25rem;
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: var(--green-accent);
+    border-bottom-color: var(--green-accent);
+}
+
+.btn, button.btn {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.25s ease;
+    font-size: 0.95rem;
+    border: 2px solid var(--black);
+    background: var(--white);
+    color: var(--black);
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.btn-primary {
+    background: var(--black);
+    color: var(--white);
+}
+
+.btn-primary:hover {
+    background: var(--green-accent);
+    border-color: var(--green-accent);
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid var(--green-accent);
+    color: var(--green-accent);
+}
+
+.btn-outline:hover {
+    background: var(--green-accent);
+    border-color: var(--green-accent);
+    color: var(--white);
+}
+
+.hero .btn-outline {
+    border-color: var(--green-accent);
+    color: var(--green-accent);
+}
+
+.hero .btn-outline:hover {
+    background: var(--green-accent);
+    color: var(--white);
+}
+
+.card {
+    background: var(--white);
+    border: 1px solid var(--border-light);
+    padding: 1.8rem;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    border-color: var(--green-accent);
+}
+
+.card-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--green-accent);
+}
+
+.card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+.card p {
+    color: #2b2b2b;
+    margin-bottom: 0;
+}
+
+.master-phone, .green-phone {
+    color: var(--green-accent);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.master-phone:hover, .green-phone:hover {
+    color: var(--black);
+}
+
+.black-link {
+    color: var(--black);
+    text-decoration: none;
+}
+
+.black-link:hover {
+    color: var(--green-accent);
+}
+
+.request-form-container {
+    background: var(--white);
+    border: 2px solid var(--black);
+    padding: 2rem;
+    margin: 2rem 0;
+    transition: all 0.3s ease;
+    display: none;
+}
+
+.request-form-container.visible {
+    display: block;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.request-form-container h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--green-accent);
+}
+
+.request-form-container > p {
+    margin-bottom: 1.5rem;
+    color: #555;
+}
+
+.form-row {
+    margin-bottom: 1rem;
+}
+
+.form-row label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 0.3rem;
+    font-size: 0.9rem;
+}
+
+.form-row input,
+.form-row textarea,
+.form-row select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    font-family: inherit;
+    font-size: 1rem;
+    background: var(--white);
+    transition: border 0.2s;
+}
+
+.form-row input:focus,
+.form-row textarea:focus,
+.form-row select:focus {
+    outline: none;
+    border-color: var(--green-accent);
+}
+
+.form-row textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.form-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.form-message {
+    margin-top: 1rem;
+    padding: 0.75rem;
+    display: none;
+}
+
+.form-message.success {
+    background: var(--green-accent);
+    color: white;
+    display: block;
+}
+
+.form-message.error {
+    background: #c0392b;
+    color: white;
+    display: block;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 2rem 0;
+    border-top: 1px solid var(--border-light);
+    padding-top: 2rem;
+}
+
+.feature {
+    flex: 1;
+    text-align: center;
+}
+
+.feature-number {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--green-accent);
+}
+
+.stats-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+    margin: 3rem 0;
+    padding: 2rem;
+    background: var(--white);
+    color: var(--black);
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--green-accent);
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}

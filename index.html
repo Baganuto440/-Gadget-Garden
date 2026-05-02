@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gadget Garden | ремонт техники</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<link rel="stylesheet" href="css/main.css">
+
+<header class="site-header">
+    <div class="container">
+        <div>
+            <a href="#" class="logo">Gadget <span>Garden</span></a>
+            <div class="logo-sub">ремонт и забота о вашей технике</div>
+        </div>
+        <div class="nav-links">
+            <a href="#">ремонт</a>
+            <a href="#">цены</a>
+            <a href="#">мастера</a>
+            <a href="#">контакты</a>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div class="container">
+        <section class="hero">
+            <h1>Ваши устройства<br> 
+                <span class="green-accent">в надёжных руках</span>
+            </h1>
+            <p>Gadget Garden — надежный ремонт и профессиональный подход.</p>
+            <div>
+                <button id="showRequestFormBtn" class="btn btn-outline">🌿 Оставить заявку</button>
+            </div>
+        </section>
+
+        <div id="requestFormContainer" class="request-form-container">
+            <h3>📋 Оставьте заявку на ремонт</h3>
+            <p>Заполните форму — мастер свяжется с вами в течение 15 минут</p>
+            
+            <form id="requestForm">
+                <div class="form-row">
+                    <label for="clientName">Ваше имя *</label>
+                    <input type="text" id="clientName" name="clientName" required placeholder="Иван Иванов">
+                </div>
+                
+                <div class="form-row">
+                    <label for="clientPhone">Телефон *</label>
+                    <input type="tel" id="clientPhone" name="clientPhone" required placeholder="+7 (900) 123-45-67">
+                </div>
+                
+                <div class="form-row">
+                    <label for="deviceType">Тип устройства</label>
+                    <input type="text" id="deviceType" name="deviceType" placeholder="iPhone 13, MacBook Air и т.д.">
+                </div>
+                
+                <div class="form-row">
+                    <label for="problemDesc">Описание проблемы</label>
+                    <textarea id="problemDesc" name="problemDesc" placeholder="Что случилось?"></textarea>
+                </div>
+                
+                <div class="form-row">
+                    <label for="masterId">Предпочитаемый мастер (необязательно)</label>
+                    <select id="masterId">
+                        <option value="">— Любой мастер —</option>
+                    </select>
+                </div>
+                
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">✉️ Отправить заявку</button>
+                    <button type="button" id="cancelFormBtn" class="btn btn-outline">Отмена</button>
+                </div>
+                
+                <div id="formMessage" class="form-message"></div>
+            </form>
+        </div>
+
+        <div class="section-title">что чиним</div>
+        <div class="grid">
+            <div class="card">
+                <div class="card-icon">📱</div>
+                <h3>Смартфоны</h3>
+                <p>iPhone, Samsung, Realme, Xiaomi — замена экрана, аккумулятора, разъёмов.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">💻</div>
+                <h3>Ноутбуки & Mac</h3>
+                <p>Диагностика, чистка, ремонт клавиатуры, замена SSD.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">📟</div>
+                <h3>Планшеты</h3>
+                <p>iPad, Samsung Galaxy Tab, Huawei — замена экрана, аккумулятора, ремонт разъёмов.</p>
+            </div>
+        </div>
+
+        <div class="section-title">как нас найти & мастера</div>
+        <div class="contact-panel">
+            <div class="info-block">
+                <h3>📍 расположение</h3>
+                <address class="address-detail">
+                    <strong>Gadget Garden</strong><br>
+                    Лермонтовский пр., 9, 1 этаж<br>
+                    Санкт-Петербург, Россия, 190000<br>
+                    ежедневно: 11:00 – 21:00
+                </address>
+                <img src="images/map.png" alt="Карта проезда" class="map-image" onerror="this.src='https://placehold.co/600x300?text=Загрузите+map.png+в+папку+images'">
+                <div class="map-caption">🗺️ Лермонтовский пр., 9 — отмечено на карте</div>
+            </div>
+
+            <div class="info-block" id="mastersBlock">
+                <h3>🔧 мастера на связи</h3>
+                <div id="mastersList">
+                    <ul class="masters-list">
+                        <li><span class="master-name">Алексей Гринёв</span><a href="tel:+7 (916) 123-45-67" class="master-phone">+7 (916) 123-45-67</a></li>
+                        <li><span class="master-name">Екатерина Вертова</span><a href="tel:+7 (903) 123-44-55" class="master-phone">+7 (903) 123-44-55</a></li>
+                        <li><span class="master-name">Дмитрий Садовников</span><a href="tel:+7 (926) 456-78-90" class="master-phone">+7 (926) 456-78-90</a></li>
+                        <li><span class="master-name">Марина Зеленина</span><a href="tel:+7 (495) 123-45-67" class="master-phone">+7 (495) 123-45-67</a></li>
+                    </ul>
+                </div>
+                <div class="work-hours">📞 Звоните с 11 до 21, также принимаем сообщения в Telegram / VK</div>
+            </div>
+
+            <div class="info-block">
+                <h3>⚡ срочная связь</h3>
+                <p>Общий номер сервисного центра:</p>
+                <p style="font-size: 1.4rem; font-weight: 600;">
+                    <a href="tel:+79633077937" class="green-phone">+7 (963) 307-79-37</a>
+                </p>
+                <p>Email: <a href="mailto:gadgetgarden@gmail.ru" class="black-link">gadgetgarden@gmail.ru</a></p>
+            </div>
+        </div>
+
+        <div class="features">
+            <div class="feature"><div class="feature-number">1 мес</div><p>гарантия на работы</p></div>
+            <div class="feature"><div class="feature-number">24/7</div><p>онлайн-запись</p></div>
+            <div class="feature"><div class="feature-number">₽0</div><p>диагностика при ремонте</p></div>
+        </div>
+
+        <div class="stats-block">
+            <div class="stat-item">
+                <div class="stat-number">2000+</div>
+                <div class="stat-label">отремонтированных устройств</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">5.0</div>
+                <div class="stat-label">средняя оценка на картах</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">2+ года</div>
+                <div class="stat-label">активной работы</div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-inner">
+            <div>© 2025 Gadget Garden — надёжный ремонт и профессиональный подход</div>
+            <div class="footer-links">
+                <a href="#">Политика конфиденциальности</a>
+                <a href="#">Мастера</a>
+                <a href="#">Адрес на карте</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
